@@ -4,7 +4,7 @@
 
 <hr>
 
-[Link](URL)
+[Liquid Documentation](https://shopify.github.io/liquid/)
 
 ### **Start End Condition**
 
@@ -104,3 +104,14 @@ Or operator- or
 
 > Examples:
 > <br>{% assign color= "black" %}<br><br> {% case color %} <br> {% when "red" %} <br> Color is {{ color }} <br> {% when "green" %} <br> Color is {{ color }} <br> {% when "blue" %} <br> Color is {{ color }} <br> {% else %} <br> Your color is not listed <br> {% endcase %}
+
+### **For Loop**
+
+```bash
+{% for vatiable_name in your_input %}
+    {{ vatiable_name }}
+{% endfor %}
+```
+
+> Examples:
+> <br> {% for item in (1..6) %}<br> {{ item }} <br> {% endfor %}<br>
