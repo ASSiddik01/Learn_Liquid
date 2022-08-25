@@ -70,9 +70,7 @@ Or operator- or
 ```
 
 > Examples:
-> <br> Assignment Operator
-> <br> ---------------------
-> <br> <br> {% if num1 > num2 and num1 > num3 %} <br> Grater number is {{ num1 }} <br> {% else %} <br> {{ num1 }} is not grater number <br> {% endif %} <br>
+> <br> {% if num1 > num2 and num1 > num3 %} <br> Grater number is {{ num1 }} <br> {% else %} <br> {{ num1 }} is not grater number <br> {% endif %} <br>
 
 ### **if else condition**
 
