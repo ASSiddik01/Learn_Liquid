@@ -2,7 +2,11 @@
 
 A Templating Language
 
-<hr>
+<hr><hr>
+
+## **_Liquid Basic for Template Developement_**
+
+<hr><hr>
 
 [Liquid Documentation](https://shopify.github.io/liquid/)
 
@@ -115,3 +119,23 @@ Or operator- or
 
 > Examples:
 > <br> {% for item in (1..6) %}<br> {{ item }} <br> {% endfor %}<br>
+
+<hr><hr>
+
+## **_Template Development_**
+
+<hr><hr>
+
+[Template Documentation](https://shopify.dev/themes/getting-started/create)
+
+### **Stylesheet add**
+
+```bash
+<link rel="preload" href="{{ 'your_css_file_name.css' | asset_url }}" as="style">
+```
+
+### **Script add**
+
+```bash
+<link rel="preload" href="{{ 'your_css_file_name.js' | asset_url }}" as="script">
+```
