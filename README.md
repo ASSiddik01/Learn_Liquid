@@ -137,5 +137,5 @@ Or operator- or
 ### **Script add**
 
 ```bash
-<link rel="preload" href="{{ 'your_css_file_name.js' | asset_url }}" as="script">
+<link rel="preload" href="{{ 'your_js_file_name.js' | asset_url }}" as="script">
 ```
