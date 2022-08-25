@@ -1,6 +1,6 @@
 # Liquid Programming
 
-## A Tamplating Language
+A Templating Language
 
 <hr>
 
