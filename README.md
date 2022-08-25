@@ -40,7 +40,7 @@
 > My name is shama
 > {% endcomment %}
 
-### **Operator**
+### **Mathmatical Operators**
 
 ```bash
 Asisgn Operator- =
@@ -55,6 +55,24 @@ Modulas Operator- | modulo:
 > <br> Assignment Operator
 > <br> ---------------------
 > <br> {%  assign num1 = 10 %} <br> {%  assign num2 = 4 %} <br><br> Addition: {{ num1 | plus: num2 }}<br> Substraction: {{ num1 | minus: num2 }}<br> Multipication: {{ num1 | times: num2 }}<br> Division: {{ num1 | divided_by: num2 }}<br> Modulas: {{ num1 | modulo: num2 }}<br>
+
+### **Conditional Operators**
+
+```bash
+Equal Operator- ==
+Graterthen operator- >
+Graterthen or equal operator- >=
+Lessthen Operator- <
+Lessthen or equal Operator- <=
+And operator- and
+Or operator- or
+
+```
+
+> Examples:
+> <br> Assignment Operator
+> <br> ---------------------
+> <br> <br> {% if num1 > num2 and num1 > num3 %} <br> Grater number is {{ num1 }} <br> {% else %} <br> {{ num1 }} is not grater number <br> {% endif %} <br>
 
 ### **if else condition**
 
