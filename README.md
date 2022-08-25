@@ -22,12 +22,10 @@
 
 ```bash
 {{ assign variable_name = variable_value }}
-
-    Examples:
-    --------
-    {{ assign myName = "Shama" }}
-
 ```
+
+> Examples:
+> {{ assign myName = "Shama" }}
 
 ### **Comment**
 
@@ -35,11 +33,9 @@
 {% comment %}
 your_text
 {% endcomment %}
-
-    Examples:
-    --------
-    {% comment %}
-    My name is shama
-    {% endcomment %}
-
 ```
+
+> Examples:
+> {% comment %}
+> My name is shama
+> {% endcomment %}
