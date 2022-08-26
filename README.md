@@ -2,6 +2,8 @@
 
 A Templating Language
 
+> ===== Note: All underscre ( \_ ) sectence will replace by yours without only type =====
+
 <hr><hr>
 
 ## **_Liquid Basic for Template Developement_**
@@ -219,3 +221,57 @@ Presets use for make the section available for all pages. Presets use in schema 
 
 > Examples:
 > <br> "presets":[ <br> { <br> "name":"Custom Text", <br> "category":"text" <br> } <br> ] <br>
+
+### **Image Picker**
+
+Image picker get the custom image from user. Image picker use in schema setting
+
+```bash
+    {
+    "type":"image_picker",
+    "id":"an_unique_id",
+    "label":"Select Your image"
+    }
+```
+
+> Examples:
+> <br> { <br> "type":"image_picker", <br> "id":"myimage", <br> "label":"Select Your image" <br> } <br>
+
+### **Image Call**
+
+Image picker get the custom image from user. Image picker use in schema setting
+
+```bash
+<img src="{{ section.settings.image_picker_id | img_url: "size_in_pixels" }}" />
+```
+
+> Examples:
+> <br> <img src="{{ section.settings.myimage | img_url: "1920x" }}" />
+
+### **Slider Schema**
+
+Slider Schema use for slide image
+
+```bash
+{% schema %}
+  {
+    "name": "schema_name",
+    "blocks": [
+     {
+       "name": "block_name",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image_picker_id",
+           "label": "image_picker_label"
+         }
+       ]
+     }
+  ]
+  }
+{% endschema %}
+```
+
+> Examples:
+> <br> {% schema %} <br> { <br> "name": "Slider", <br> "blocks": [ <br> { <br> "name": "Slide", <br> "type": "slide", <br> "settings": [ <br> { <br> "type": "image_picker", <br> "id": "image", <br> "label": "Image" <br> } <br> ] <br> } <br> ] <br> } <br> {% endschema %}
