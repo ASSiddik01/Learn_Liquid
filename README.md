@@ -190,3 +190,32 @@ Schema call in the section page
 
 > Examples:
 > <br> {{ section.settings.textid }}
+
+### **Presets Design**
+
+Presets use for make the section available for all pages. Presets use in schema after settings
+
+```bash
+{% schema %}
+  {
+    "name": "section_name",
+    "settings": [
+      {
+        "type":"which_type_you_want",
+        "id":"an_uique_id",
+        "label":"which_show_in_the_theme_customization",
+        "default":"section_default_value"
+      }
+    ],
+    "presets":[
+      {
+        "name":"section_name_which_is_show_in_add_section",
+        "category":"section_type/category"
+      }
+    ]
+  }
+{% endschema %}
+```
+
+> Examples:
+> <br> "presets":[ <br> { <br> "name":"Custom Text", <br> "category":"text" <br> } <br> ] <br>
