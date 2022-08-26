@@ -275,3 +275,14 @@ Slider Schema use for slide image
 
 > Examples:
 > <br> {% schema %} <br> { <br> "name": "Slider", <br> "blocks": [ <br> { <br> "name": "Slide", <br> "type": "slide", <br> "settings": [ <br> { <br> "type": "image_picker", <br> "id": "image", <br> "label": "Image" <br> } <br> ] <br> } <br> ] <br> } <br> {% endschema %}
+
+### **Snippets**
+
+Snippets is the small part of section. It is used for store html code and it called in section page
+
+```bash
+{% include 'Snippets_name' %}
+```
+
+> Examples:
+> <br> {% include 'demo' %}
