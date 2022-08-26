@@ -139,3 +139,54 @@ Or operator- or
 ```bash
 <link rel="preload" href="{{ 'your_js_file_name.js' | asset_url }}" as="script">
 ```
+
+### **Section Call**
+
+Section call in the template page
+
+```bash
+{% section 'your_section_file_name' %}
+```
+
+> Examples:
+> <br> {% section 'demo' %}
+
+### **Schema Design**
+
+Schema design like as a JSON format
+
+```bash
+{% schema %}
+  {
+    "name": "section_name",
+    "settings": [
+      {
+        "type":"which_type_you_want",
+        "id":"an_uique_id",
+        "label":"which_show_in_the_theme_customization",
+        "default":"section_default_value"
+      },
+      {
+        "type":"which_type_you_want",
+        "id":"an_uique_id",
+        "label":"which_show_in_the_theme_customization",
+        "default":"section_default_value"
+      }
+    ]
+  }
+{% endschema %}
+```
+
+> Examples:
+> <br> {% schema %} <br> { <br> "name": "Custom", <br> "settings": [ <br> { <br> "type":"text", <br> "id":"textid", <br> "label":"Enter Your Text", <br> "default":"This is custom section" <br> } <br> ] <br> } <br> {% endschema %} <br>
+
+### **Schema Call**
+
+Schema call in the section page
+
+```bash
+{{ section.settings.your_section_id }}
+```
+
+> Examples:
+> <br> {{ section.settings.textid }}
