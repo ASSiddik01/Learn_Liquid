@@ -286,3 +286,12 @@ Snippets is the small part of section. It is used for store html code and it cal
 
 > Examples:
 > <br> {% include 'demo' %}
+
+### **Theme Setting call**
+
+```bash
+{{ settings.schema_settings_id }}
+```
+
+> Examples:
+> <br> {{ settings.text }}
