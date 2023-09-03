@@ -10,9 +10,9 @@ A Templating Language
 
 <hr><hr>
 
-[Liquid Documentation](https://shopify.github.io/liquid/)
+[Liquid Documentation](https://shopify.dev/docs/api/liquid/)
 
-### **Start End Condition**
+### **Logical Start End**
 
 ```bash
 {% %}
@@ -27,11 +27,11 @@ A Templating Language
 ### **Variable Declear**
 
 ```bash
-{{ assign variable_name = variable_value }}
+{% assign variable_name = variable_value %}
 ```
 
 > Examples:
-> <br> {{ assign myName = "Shama" }}
+> <br> {% assign myName = "Shama" %}
 
 ### **Comment**
 
