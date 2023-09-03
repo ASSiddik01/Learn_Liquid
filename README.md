@@ -72,11 +72,23 @@ Lessthen Operator- <
 Lessthen or equal Operator- <=
 And operator- and
 Or operator- or
-
+Checks for strings operator- contains
 ```
 
 > Examples:
 > <br> {% if num1 > num2 and num1 > num3 %} <br> Grater number is {{ num1 }} <br> {% else %} <br> {{ num1 }} is not grater number <br> {% endif %} <br>
+
+### **Types in shopify**
+
+```bash
+string - Any series of characters, wrapped in single or double quotes.
+number - Numeric values, including floats and integers.
+boolean - A binary value, either true or false.
+nil - An undefined value.
+Anchor to section titled '[object Object]'
+array - A list of variables of any type.
+empty - An empty object is returned if you try to access an object that is defined, but has no value.
+```
 
 ### **if else condition**
 
