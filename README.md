@@ -98,6 +98,8 @@ empty - An empty object is returned if you try to access an object that is defin
 {%- if collection.products.size > 0 -%}
 ```
 
+## **[Conditional Tag](https://shopify.dev/docs/api/liquid/tags/conditional-tags)**
+
 ### **[if elsif and else condition](https://shopify.dev/docs/api/liquid/tags/if)**
 
 ```bash
@@ -141,16 +143,15 @@ empty - An empty object is returned if you try to access an object that is defin
 > Examples:
 > <br>{% assign color= "black" %}<br><br> {% case color %} <br> {% when "red" %} <br> Color is {{ color }} <br> {% when "green" %} <br> Color is {{ color }} <br> {% when "blue" %} <br> Color is {{ color }} <br> {% else %} <br> Your color is not listed <br> {% endcase %}
 
-### **For Loop**
+## **[Iteration tags](https://shopify.dev/docs/api/liquid/tags/iteration-tags)**
+
+### **[for loop](https://shopify.dev/docs/api/liquid/tags/for)**
 
 ```bash
-{% for vatiable_name in your_input %}
-    {{ vatiable_name }}
+{% for variable in array %}
+  expression
 {% endfor %}
 ```
-
-> Examples:
-> <br> {% for item in (1..6) %}<br> {{ item }} <br> {% endfor %}<br>
 
 <hr><hr>
 
