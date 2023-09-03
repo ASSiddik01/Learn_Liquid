@@ -33,19 +33,6 @@ A Templating Language
 > Examples:
 > <br> {% assign myName = "Shama" %}
 
-### **Comment**
-
-```bash
-{% comment %}
-    your_text
-{% endcomment %}
-```
-
-> Examples:
-> <br> {% comment %}
-> My name is shama
-> {% endcomment %}
-
 ### **Mathmatical Operators**
 
 ```bash
@@ -154,6 +141,26 @@ empty - An empty object is returned if you try to access an object that is defin
 ```
 
 <hr><hr>
+
+## **[Syntex tags](https://shopify.dev/docs/api/liquid/tags/syntax-tags)**
+
+### **[Comment](https://shopify.dev/docs/api/liquid/tags/comment)**
+
+> Multiline comment
+
+```bash
+{% comment %}
+  content
+{% endcomment %}
+```
+
+> Single line comment
+
+```bash
+{% # content %}
+```
+
+## **[Syntex tags](https://shopify.dev/docs/api/liquid/tags/syntax-tags)**
 
 ## **_Template Development_**
 
