@@ -90,6 +90,14 @@ array - A list of variables of any type.
 empty - An empty object is returned if you try to access an object that is defined, but has no value.
 ```
 
+### **[Whitespace control](https://shopify.dev/docs/api/liquid/basics#whitespace-control)**
+
+> - hypen remove the white space
+
+```bash
+{%- if collection.products.size > 0 -%}
+```
+
 ### **if else condition**
 
 ```bash
