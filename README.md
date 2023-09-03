@@ -98,14 +98,14 @@ empty - An empty object is returned if you try to access an object that is defin
 {%- if collection.products.size > 0 -%}
 ```
 
-### **if else condition**
+### **[if elsif and else condition](https://shopify.dev/docs/api/liquid/tags/if)**
 
 ```bash
 {% if your_condition %}
         Your_Output
     {% elsif your_condition %}
         Your_Output
-    {% else your_condition %}
+    {% else %}
         Your_Output
 {% endif %}
 ```
@@ -113,7 +113,17 @@ empty - An empty object is returned if you try to access an object that is defin
 > Examples:
 > <br> {% if num1 > num2 %} <br> Grater number is {{ num1 }} <br>{% elsif num1 < num2  %} <br>Grater number is {{ num2 }} <br> {% else num1 == num2 %} <br> Both are equal <br> {% endif %} <br>
 
-### **Switch Case**
+### **[unless condition](https://shopify.dev/docs/api/liquid/tags/unless)**
+
+> unless user for if oposite
+
+```bash
+{% unless condition %}
+  expression
+{% endunless %}
+```
+
+### **[Switch Case](https://shopify.dev/docs/api/liquid/tags/case)**
 
 ```bash
 {% case your_input %}
